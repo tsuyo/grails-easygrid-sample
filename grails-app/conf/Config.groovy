@@ -412,6 +412,9 @@ easygrid {
         stdBoolFormatter = {
             it ? "Yes" : "No"
         }
+		imgFormatter = {
+			"<img src=${it} />"
+		}
     }
 }
 

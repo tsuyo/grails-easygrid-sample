@@ -1,8 +1,8 @@
 package com.vmware.jp.easygrid
 
 class Member {
+	long github_id // json: id
 	String login
-    String github_id
     String avatar_url
     String gravatar_id
     String url

@@ -21,24 +21,10 @@
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
-<%--			<table>--%>
-<%--				<thead>--%>
-<%--					<tr>--%>
-<%--					--%>
-<%--					</tr>--%>
-<%--				</thead>--%>
-<%--				<tbody>--%>
-<%--				<g:each in="${memberInstanceList}" status="i" var="memberInstance">--%>
-<%--					<tr class="${(i % 2) == 0 ? 'even' : 'odd'}">--%>
-<%--					--%>
-<%--					</tr>--%>
-<%--				</g:each>--%>
-<%--				</tbody>--%>
-<%--			</table>--%>
-<%--			<div class="pagination">--%>
-<%--				<g:paginate total="${memberInstanceTotal}" />--%>
-<%--			</div>--%>
-			<grid:grid name="customMembers" />
+			<grid:grid id='customMembers' name='customMembers'
+				jqgrid.caption="'Member List'"
+				jqgrid.width='"958"'
+				jqgrid.height='"500"'/>
 		</div>
 	</body>
 </html>
